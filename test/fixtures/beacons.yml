@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: MyString
+  latitude: 1.5
+  longitude: 1.5
+  timestamp: 2011-04-04 20:03:58
+
+two:
+  user: MyString
+  latitude: 1.5
+  longitude: 1.5
+  timestamp: 2011-04-04 20:03:58

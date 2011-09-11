@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <script src="http://code.jquery.com/jquery-1.4.2.js" type="text/javascript"></script>
+  <script src="http://kevnls.dyndns-home.com/geekbeacons/jqtouch/jqtouch/jqtouch.min.js" type="application/x-javascript" charset="utf-8"></script>
+  <link href="http://kevnls.dyndns-home.com/geekbeacons/jqtouch/jqtouch/jqtouch.min.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="http://kevnls.dyndns-home.com/geekbeacons/jqtouch/themes/jqt/theme.min.css" media="screen" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+  	$.jQTouch({
+  	    icon: 'jqtouch.png',
+  	    statusBar: 'black-translucent',
+  	    preloadImages: [
+  	        'http://kevnls.dyndns-home.com/geekbeacons/jqtouch/themes/jqt/img/chevron_white.png',
+  	        'http://kevnls.dyndns-home.com/geekbeacons/jqtouch/themes/jqt/img/bg_row_select.gif',
+  	        'http://kevnls.dyndns-home.com/geekbeacons/jqtouch/themes/jqt/img/back_button_clicked.png',
+  	        'http://kevnls.dyndns-home.com/geekbeacons/jqtouch/themes/jqt/img/button_clicked.png'
+  	        ]
+  	});
+  </script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>-->
+  <title>Beacons: <%= controller.action_name %></title>
+  <%= yield :head %>
+</head>
+<body>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<%= yield %>
+
+</body>
+</html>
